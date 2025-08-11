@@ -38,22 +38,19 @@ The script:
 ### 1. Dry-run against specific users
 
 ```powershell
-.
-Set-MailboxAuditOwner-SearchQuery.ps1 -Users user1@contoso.com,user2@contoso.com -WhatIf
+.\Set-MailboxAuditOwner-SearchQuery.ps1 -Users user1@contoso.com,user2@contoso.com -WhatIf
 ```
 
 ### 2. Apply changes to all user mailboxes
 
 ```powershell
-.
-Set-MailboxAuditOwner-SearchQuery.ps1
+.\Set-MailboxAuditOwner-SearchQuery.ps1
 ```
 
 ### 3. Apply changes to specific users and save report to a custom location
 
 ```powershell
-.
-Set-MailboxAuditOwner-SearchQuery.ps1 -Users "user1@contoso.com","user2@contoso.com" -ReportPath "C:\Temp\AuditOwner_SelectedUsers.txt"
+.\Set-MailboxAuditOwner-SearchQuery.ps1 -Users "user1@contoso.com","user2@contoso.com" -ReportPath "C:\Temp\AuditOwner_SelectedUsers.txt"
 ```
 
 ---
