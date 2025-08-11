@@ -40,17 +40,17 @@ A PowerShell script to inventory **Mailbox Audit Bypass** in Exchange Online, ex
 # 2) Exports a CSV of only principals with bypass enabled (if any)
 # 3) Writes to ~/Documents/MailboxAuditBypassReports by default
 
-.\nReport-MailboxAuditBypass.ps1
+.\Report-MailboxAuditBypass.ps1
 ```
 
 With options:
 
 ```powershell
 # Choose a custom folder
-.\nReport-MailboxAuditBypass.ps1 -OutputFolder "C:\Reports\AuditBypass"
+.\Report-MailboxAuditBypass.ps1 -OutputFolder "C:\Reports\AuditBypass"
 
 # Export full baseline (all principals) and open the files when done
-.\nReport-MailboxAuditBypass.ps1 -ExportAll -OpenOnSave
+.\Report-MailboxAuditBypass.ps1 -ExportAll -OpenOnSave
 ```
 
 ---
@@ -159,9 +159,3 @@ if ($enabled.Count -gt 0) {
 ## Versioning
 
 * v1.0 — Initial release (query, export, baseline, basic summary)
-
----
-
-## License
-
-MIT (or align with your repo standard).
